@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FísicaLab · Trabalho de Física 2ºB</title>
+  <meta name="description" content="Laboratório digital de Óptica — luz, espelhos, olhos e lentes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-noise"></div>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" data-page="home">
+        <div class="logo-mark">Φ</div>
+        <div>
+          <div class="logo-name">Física<span>Lab</span></div>
+          <div class="logo-tag">óptica · 2ºB</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#" data-page="home" class="nav-link active">Início</a>
+        <a href="#" data-page="luz" class="nav-link">Luz</a>
+        <a href="#" data-page="espelhos" class="nav-link">Espelhos</a>
+        <a href="#" data-page="olhos" class="nav-link">Olhos</a>
+        <a href="#" data-page="lentes" class="nav-link">Lentes</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <div id="page-home" class="page active">
+    <main class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="chip">trabalho escolar · 2ºB</p>
+          <h1>
+            Trabalho de<br />
+            Física<br />
+            <em>2ºB</em>
+          </h1>
+          <p class="lead">
+            Conteúdos de Óptica aplicados ao estudo da luz e sua decomposição,
+            dos espelhos, do funcionamento dos olhos e das lentes.
+          </p>
+          <div class="cta-row">
+            <a href="#" class="btn btn-main" data-page="luz">iniciar percurso ↓</a>
+            <a href="#" class="btn btn-line" data-page="sobre">sobre este laboratório →</a>
+          </div>
+          <div class="metrics">
+            <div class="metric"><strong>04</strong><span>módulos</span></div>
+            <div class="metric"><strong>12</strong><span>ideias-chave</span></div>
+            <div class="metric"><strong>01</strong><span>pergunta central</span></div>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="orbit">
+            <div class="orbit-ring"></div>
+            <div class="orbit-core">c = λf</div>
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+          </div>
+          <p class="hand-note">hipótese em teste</p>
+        </div>
+      </section>
+
+      <section class="modules">
+        <div class="sec-head">
+          <h2>Módulos</h2>
+          <p class="sec-hint">escolha um para continuar</p>
+        </div>
+        <div class="mod-grid">
+          <article class="mod-card" data-page="luz">
+            <div class="mod-3d prism-3d" aria-hidden="true">
+              <div class="prism">
+                <span class="face f1"></span>
+                <span class="face f2"></span>
+                <span class="face f3"></span>
+              </div>
+            </div>
+            <span class="mod-id">01</span>
+            <h3>Luz e Decomposição</h3>
+            <p>Espectro, prisma e cores.</p>
+          </article>
+          <article class="mod-card" data-page="espelhos">
+            <div class="mod-3d mirror-3d" aria-hidden="true">
+              <div class="mirror-body"></div>
+              <div class="mirror-stand"></div>
+            </div>
+            <span class="mod-id">02</span>
+            <h3>Espelhos</h3>
+            <p>Reflexão, planos e curvos.</p>
+          </article>
+          <article class="mod-card" data-page="olhos">
+            <div class="mod-3d eye-3d" aria-hidden="true">
+              <div class="eye-ball">
+                <div class="iris"><div class="pupil"></div></div>
+              </div>
+            </div>
+            <span class="mod-id">03</span>
+            <h3>Olhos</h3>
+            <p>Formação de imagem e defeitos.</p>
+          </article>
+          <article class="mod-card" data-page="lentes">
+            <div class="mod-3d lens-3d" aria-hidden="true">
+              <div class="lens-shape"></div>
+            </div>
+            <span class="mod-id">04</span>
+            <h3>Lentes</h3>
+            <p>Convergentes, divergentes e aplicações.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- LUZ -->
+  <div id="page-luz" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 01</p>
+      <h1>Luz e Decomposição</h1>
+      <p class="content-lead">Estudo do espectro luminoso, da decomposição da luz branca e das cores.</p>
+
+      <div class="demo-3d">
+        <div class="prism-demo">
+          <div class="beam beam-in"></div>
+          <div class="prism-big">
+            <span class="pf p1"></span>
+            <span class="pf p2"></span>
+            <span class="pf p3"></span>
+          </div>
+          <div class="spectrum">
+            <i style="--c:#e85d4c"></i><i style="--c:#f0a030"></i><i style="--c:#e8d44d"></i>
+            <i style="--c:#4caf70"></i><i style="--c:#3b8fd9"></i><i style="--c:#6b5b95"></i>
+          </div>
+        </div>
+        <p class="demo-caption">luz branca → prisma → espectro</p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>O que é a luz?</h3>
+          <p>A luz é uma onda eletromagnética visível. No vácuo, sua velocidade é aproximadamente <strong>c = 3 × 10⁸ m/s</strong>. A relação fundamental é <strong>c = λf</strong>, onde λ é o comprimento de onda e f a frequência.</p>
+        </article>
+        <article class="info-card">
+          <h3>Decomposição da luz</h3>
+          <p>Quando a luz branca atravessa um prisma, ela se decompõe nas cores do espectro: vermelho, laranja, amarelo, verde, azul, anil e violeta. Cada cor tem um índice de refração diferente.</p>
+        </article>
+        <article class="info-card">
+          <h3>Espectro visível</h3>
+          <p>O espectro visível vai de cerca de 400 nm (violeta) a 700 nm (vermelho). Fora dessa faixa estão o ultravioleta e o infravermelho, invisíveis ao olho humano.</p>
+        </article>
+        <article class="info-card">
+          <h3>Ideias-chave</h3>
+          <ul>
+            <li>Luz = onda eletromagnética</li>
+            <li>c = λf</li>
+            <li>Prisma decompõe a luz branca</li>
+            <li>Cada cor tem λ diferente</li>
+          </ul>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="home">← início</a>
+        <a href="#" class="btn btn-main" data-page="espelhos">próximo: espelhos →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- ESPELHOS -->
+  <div id="page-espelhos" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 02</p>
+      <h1>Espelhos</h1>
+      <p class="content-lead">Reflexão da luz em superfícies planas e curvas.</p>
+
+      <div class="demo-3d">
+        <div class="mirror-demo">
+          <div class="ray ray-in"></div>
+          <div class="mirror-plate"></div>
+          <div class="ray ray-out"></div>
+        </div>
+        <p class="demo-caption">ângulo de incidência = ângulo de reflexão</p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Lei da reflexão</h3>
+          <p>O ângulo de incidência é igual ao ângulo de reflexão. O raio incidente, o raio refletido e a normal estão no mesmo plano.</p>
+        </article>
+        <article class="info-card">
+          <h3>Espelho plano</h3>
+          <p>Forma imagens virtuais, direitas, do mesmo tamanho e simétricas em relação ao espelho. A distância objeto-espelho é igual à distância imagem-espelho.</p>
+        </article>
+        <article class="info-card">
+          <h3>Espelhos esféricos</h3>
+          <p><strong>Côncavos:</strong> imagens reais ou virtuais, ampliadas ou reduzidas.<br /><strong>Convexos:</strong> sempre virtuais, direitas e menores.</p>
+        </article>
+        <article class="info-card">
+          <h3>Ideias-chave</h3>
+          <ul>
+            <li>i = r (lei da reflexão)</li>
+            <li>Plano → imagem virtual e simétrica</li>
+            <li>Côncavo → foco real</li>
+            <li>Convexo → foco virtual</li>
+          </ul>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="luz">← luz</a>
+        <a href="#" class="btn btn-main" data-page="olhos">próximo: olhos →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- OLHOS -->
+  <div id="page-olhos" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 03</p>
+      <h1>Olhos</h1>
+      <p class="content-lead">Como o olho humano forma imagens e os principais defeitos da visão.</p>
+
+      <div class="demo-3d">
+        <div class="eye-demo">
+          <div class="eye-3d-big">
+            <div class="sclera">
+              <div class="iris-big"><div class="pupil-big"></div></div>
+            </div>
+          </div>
+        </div>
+        <p class="demo-caption">córnea + cristalino → imagem na retina</p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Estrutura do olho</h3>
+          <p>A córnea e o cristalino atuam como lentes convergentes. A imagem é formada na retina, de forma invertida. O cérebro interpreta a imagem na posição correta.</p>
+        </article>
+        <article class="info-card">
+          <h3>Acomodação</h3>
+          <p>O cristalino muda de forma (mais ou menos convexo) para focar objetos próximos ou distantes. Isso se chama acomodação visual.</p>
+        </article>
+        <article class="info-card">
+          <h3>Defeitos da visão</h3>
+          <p><strong>Miopia:</strong> imagem antes da retina → lente divergente.<br /><strong>Hipermetropia:</strong> imagem atrás da retina → lente convergente.<br /><strong>Astigmatismo:</strong> córnea irregular → lentes cilíndricas.</p>
+        </article>
+        <article class="info-card">
+          <h3>Ideias-chave</h3>
+          <ul>
+            <li>Córnea + cristalino = lentes</li>
+            <li>Imagem na retina</li>
+            <li>Miopia → divergente</li>
+            <li>Hipermetropia → convergente</li>
+          </ul>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="espelhos">← espelhos</a>
+        <a href="#" class="btn btn-main" data-page="lentes">próximo: lentes →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- LENTES -->
+  <div id="page-lentes" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 04</p>
+      <h1>Lentes</h1>
+      <p class="content-lead">Lentes convergentes e divergentes e suas aplicações.</p>
+
+      <div class="demo-3d">
+        <div class="lens-demo">
+          <div class="lens-conv"></div>
+          <div class="lens-rays">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <p class="demo-caption">lente convergente → raios para o foco</p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Lentes convergentes</h3>
+          <p>Mais espessas no centro. Convergem os raios para um foco real. Usadas em lupas, câmeras, projetores e para corrigir hipermetropia.</p>
+        </article>
+        <article class="info-card">
+          <h3>Lentes divergentes</h3>
+          <p>Mais espessas nas bordas. Divergem os raios (foco virtual). Usadas para corrigir miopia e em sistemas ópticos.</p>
+        </article>
+        <article class="info-card">
+          <h3>Equação das lentes</h3>
+          <p>Equação de Gauss: <strong>1/f = 1/p + 1/p'</strong>, onde f é a distância focal, p a distância do objeto e p' a distância da imagem.</p>
+        </article>
+        <article class="info-card">
+          <h3>Ideias-chave</h3>
+          <ul>
+            <li>Convergente → foco real</li>
+            <li>Divergente → foco virtual</li>
+            <li>1/f = 1/p + 1/p'</li>
+            <li>Aplicações no dia a dia</li>
+          </ul>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="olhos">← olhos</a>
+        <a href="#" class="btn btn-main" data-page="home">voltar ao início →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- SOBRE -->
+  <div id="page-sobre" class="page">
+    <main class="container content-page">
+      <p class="sec-code">informação</p>
+      <h1>Sobre este laboratório</h1>
+      <div class="info-grid single">
+        <article class="info-card">
+          <p>
+            Este caderno digital reúne os principais conceitos de Óptica estudados no 2º ano.
+            Explore os módulos, revise as ideias-chave e teste sua compreensão.
+          </p>
+          <p style="margin-top:1rem;color:var(--primary);font-family:var(--hand);font-size:1.25rem;">
+            — Trabalho de Física · 2ºB
+          </p>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-main" data-page="home">← voltar ao início</a>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      Trabalho de Física · 2ºB · FísicaLab
+    </div>
+  </footer>
+
+  <!-- Marca d'água 3D -->
+  <div class="watermark" aria-hidden="true">
+    <span class="wm-3d">João Dias</span>
+  </div>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const el = document.getElementById('page-' + id);
+      if (el) { el.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.toggle('active', l.dataset.page === id));
+    }
+    document.querySelectorAll('[data-page]').forEach(el => {
+      el.addEventListener('click', e => { e.preventDefault(); showPage(el.dataset.page); });
+    });
+    showPage('home');
+  </script>
+</body>
+</html>
