@@ -341,19 +341,11 @@
 
       <div class="img-slots">
         <figure class="img-slot">
-          <img
-            id="img-bengala-1"
-            src="WhatsApp Image 2026-06-10 at 09.31.10 (3).jpeg"
-            alt="Protótipo da bengala com sensor, Arduino e fios na mesa"
-          />
+          <img id="img-bengala-1" src="WhatsApp Image 2026-06-10 at 09.31.10 (3).jpeg" alt="Protótipo da bengala com sensor, Arduino e fios na mesa" />
           <figcaption class="img-cap">Protótipo da bengala com sensor e circuitos</figcaption>
         </figure>
         <figure class="img-slot">
-          <img
-            id="img-bengala-2"
-            src="WhatsApp Image 2026-06-10 at 09.31.10 (4).jpeg"
-            alt="Bengala com sensor e cartaz do projeto na sala de aula"
-          />
+          <img id="img-bengala-2" src=" WhatsApp Image 2026-06-10 at 09.31.10 (4).jpeg" alt="Bengala com sensor e cartaz do projeto na sala de aula" />
           <figcaption class="img-cap">Exposição do projeto — Bengala de Sensor</figcaption>
         </figure>
       </div>
@@ -401,6 +393,27 @@
           </div>
         </article>
       </div>
+
+      <article class="code-box">
+        <div class="code-box-head">
+          <h3>Código Arduino — Bengala IR</h3>
+          <span class="code-tag">cole seu código aqui</span>
+        </div>
+        <pre class="code-block"><code>// Cole aqui o código da bengala com sensor IR
+// Exemplo de estrutura:
+
+// #define pinSensor ...
+// #define pinBuzzer ...
+
+// void setup() {
+//   ...
+// }
+
+// void loop() {
+//   ...
+// }</code></pre>
+      </article>
+
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="lentes">← lentes</a>
         <a href="#" class="btn btn-main" data-page="semaforo">próximo →</a>
@@ -408,7 +421,7 @@
     </main>
   </div>
 
-  <!-- SEMÁFORO (sem imagens) -->
+  <!-- SEMÁFORO -->
   <div id="page-semaforo" class="page">
     <main class="container content-page">
       <p class="sec-code">módulo 06</p>
@@ -458,6 +471,55 @@
           </div>
         </article>
       </div>
+
+      <article class="code-box">
+        <div class="code-box-head">
+          <h3>Código Arduino — Semáforo</h3>
+          <span class="code-tag">.ino</span>
+        </div>
+        <pre class="code-block"><code>#define pinLEDVerde 2
+#define pinLEDAmarelo 3
+#define pinLEDVermelho 4
+
+void setup() {
+  pinMode(pinLEDVerde, OUTPUT);
+  pinMode(pinLEDAmarelo, OUTPUT);
+  pinMode(pinLEDVermelho, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(pinLEDVerde, HIGH);
+  digitalWrite(pinLEDAmarelo, LOW);
+  digitalWrite(pinLEDVermelho, LOW);
+  delay(2000);
+
+  digitalWrite(pinLEDVerde, LOW);
+  digitalWrite(pinLEDAmarelo, HIGH);
+  digitalWrite(pinLEDVermelho, LOW);
+  delay(500);
+
+  digitalWrite(pinLEDVerde, LOW);
+  digitalWrite(pinLEDAmarelo, LOW);
+  digitalWrite(pinLEDVermelho, HIGH);
+  delay(2000);
+}</code></pre>
+      </article>
+
+      <article class="video-box">
+        <div class="code-box-head">
+          <h3>Vídeo do projeto</h3>
+          <a class="code-tag" href="https://www.youtube.com/watch?v=YH5YQ-wj_aY" target="_blank" rel="noopener">abrir no YouTube</a>
+        </div>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/YH5YQ-wj_aY"
+            title="Vídeo do semáforo com Arduino"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="bengala">← bengala IR</a>
         <a href="#" class="btn btn-main" data-page="home">voltar ao início →</a>
