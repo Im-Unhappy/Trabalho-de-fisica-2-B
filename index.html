@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FísicaLab · Trabalho de Física 2ºB</title>
-  <meta name="description" content="Laboratório digital de Óptica — luz, espelhos, olhos e lentes." />
+  <title>Projeto IFA</title>
+  <meta name="description" content="Projeto IFA — óptica, bengala com sensor infravermelho e semáforo com Arduino." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,10 +17,10 @@
   <header class="header">
     <div class="container header-inner">
       <a href="#" class="logo" data-page="home">
-        <div class="logo-mark">Φ</div>
+        <div class="logo-mark">IFA</div>
         <div>
-          <div class="logo-name">Física<span>Lab</span></div>
-          <div class="logo-tag">óptica · 2ºB</div>
+          <div class="logo-name">Projeto <span>IFA</span></div>
+          <div class="logo-tag">investigação · 2ºB</div>
         </div>
       </a>
       <nav class="nav">
@@ -29,6 +29,8 @@
         <a href="#" data-page="espelhos" class="nav-link">Espelhos</a>
         <a href="#" data-page="olhos" class="nav-link">Olhos</a>
         <a href="#" data-page="lentes" class="nav-link">Lentes</a>
+        <a href="#" data-page="bengala" class="nav-link">Bengala IR</a>
+        <a href="#" data-page="semaforo" class="nav-link">Semáforo</a>
       </nav>
     </div>
   </header>
@@ -38,31 +40,26 @@
     <main class="container">
       <section class="hero">
         <div class="hero-copy">
-          <p class="chip">trabalho escolar · 2ºB</p>
-          <h1>
-            Trabalho de<br />
-            Física<br />
-            <em>2ºB</em>
-          </h1>
+          <p class="chip">projeto escolar · 2ºB</p>
+          <h1>Projeto<br /><em>IFA</em></h1>
           <p class="lead">
-            Conteúdos de Óptica aplicados ao estudo da luz e sua decomposição,
-            dos espelhos, do funcionamento dos olhos e das lentes.
+            Óptica, bengala com sensor infravermelho e semáforo com Arduino —
+            um caderno de investigação para explorar luz, visão e tecnologia.
           </p>
           <div class="cta-row">
             <a href="#" class="btn btn-main" data-page="luz">iniciar percurso ↓</a>
-            <a href="#" class="btn btn-line" data-page="sobre">sobre este laboratório →</a>
+            <a href="#" class="btn btn-line" data-page="sobre">sobre o projeto →</a>
           </div>
           <div class="metrics">
-            <div class="metric"><strong>04</strong><span>módulos</span></div>
-            <div class="metric"><strong>12</strong><span>ideias-chave</span></div>
-            <div class="metric"><strong>01</strong><span>pergunta central</span></div>
+            <div class="metric"><strong>06</strong><span>módulos</span></div>
+            <div class="metric"><strong>02</strong><span>projetos tech</span></div>
+            <div class="metric"><strong>01</strong><span>ideia central</span></div>
           </div>
         </div>
-
         <div class="hero-stage">
           <div class="orbit">
             <div class="orbit-ring"></div>
-            <div class="orbit-core">c = λf</div>
+            <div class="orbit-core">IFA</div>
             <span class="dot d1"></span>
             <span class="dot d2"></span>
           </div>
@@ -75,45 +72,36 @@
           <h2>Módulos</h2>
           <p class="sec-hint">escolha um para continuar</p>
         </div>
-        <div class="mod-grid">
+        <div class="mod-grid mod-grid-6">
           <article class="mod-card" data-page="luz">
-            <div class="mod-3d prism-3d" aria-hidden="true">
-              <div class="prism">
-                <span class="face f1"></span>
-                <span class="face f2"></span>
-                <span class="face f3"></span>
-              </div>
-            </div>
             <span class="mod-id">01</span>
             <h3>Luz e Decomposição</h3>
             <p>Espectro, prisma e cores.</p>
           </article>
           <article class="mod-card" data-page="espelhos">
-            <div class="mod-3d mirror-3d" aria-hidden="true">
-              <div class="mirror-body"></div>
-              <div class="mirror-stand"></div>
-            </div>
             <span class="mod-id">02</span>
             <h3>Espelhos</h3>
             <p>Reflexão, planos e curvos.</p>
           </article>
           <article class="mod-card" data-page="olhos">
-            <div class="mod-3d eye-3d" aria-hidden="true">
-              <div class="eye-ball">
-                <div class="iris"><div class="pupil"></div></div>
-              </div>
-            </div>
             <span class="mod-id">03</span>
             <h3>Olhos</h3>
             <p>Formação de imagem e defeitos.</p>
           </article>
           <article class="mod-card" data-page="lentes">
-            <div class="mod-3d lens-3d" aria-hidden="true">
-              <div class="lens-shape"></div>
-            </div>
             <span class="mod-id">04</span>
             <h3>Lentes</h3>
             <p>Convergentes, divergentes e aplicações.</p>
+          </article>
+          <article class="mod-card" data-page="bengala">
+            <span class="mod-id">05</span>
+            <h3>Bengala com sensor IR</h3>
+            <p>Sensor infravermelho e acessibilidade.</p>
+          </article>
+          <article class="mod-card" data-page="semaforo">
+            <span class="mod-id">06</span>
+            <h3>Semáforo com Arduino</h3>
+            <p>Circuitos, LEDs e programação.</p>
           </article>
         </div>
       </section>
@@ -123,27 +111,15 @@
   <!-- LUZ -->
   <div id="page-luz" class="page">
     <main class="container content-page">
-      <p class="sec-code">módulo 01</p>
-      <h1>Luz e Decomposição</h1>
-      <p class="content-lead">Estudo do espectro luminoso, da decomposição da luz branca e das cores.</p>
-
-      <div class="demo-3d">
-        <div class="prism-demo">
-          <div class="beam beam-in"></div>
-          <div class="prism-big">
-            <span class="pf p1"></span>
-            <span class="pf p2"></span>
-            <span class="pf p3"></span>
-          </div>
-          <div class="spectrum">
-            <i style="--c:#e85d4c"></i><i style="--c:#f0a030"></i><i style="--c:#e8d44d"></i>
-            <i style="--c:#4caf70"></i><i style="--c:#3b8fd9"></i><i style="--c:#6b5b95"></i>
-          </div>
+      <div class="content-top">
+        <div>
+          <p class="sec-code">módulo 01</p>
+          <h1>Luz e Decomposição</h1>
         </div>
-        <p class="demo-caption">luz branca → prisma → espectro</p>
+        <button type="button" class="btn-speak" data-speak="texto-luz">🔊 Ouvir texto</button>
       </div>
-
-      <div class="info-grid">
+      <p class="content-lead">Estudo do espectro luminoso, da decomposição da luz branca e das cores.</p>
+      <div id="texto-luz" class="info-grid">
         <article class="info-card">
           <h3>O que é a luz?</h3>
           <p>A luz é uma onda eletromagnética visível. No vácuo, sua velocidade é aproximadamente <strong>c = 3 × 10⁸ m/s</strong>. A relação fundamental é <strong>c = λf</strong>, onde λ é o comprimento de onda e f a frequência.</p>
@@ -168,7 +144,7 @@
       </div>
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="home">← início</a>
-        <a href="#" class="btn btn-main" data-page="espelhos">próximo: espelhos →</a>
+        <a href="#" class="btn btn-main" data-page="espelhos">próximo →</a>
       </div>
     </main>
   </div>
@@ -176,20 +152,15 @@
   <!-- ESPELHOS -->
   <div id="page-espelhos" class="page">
     <main class="container content-page">
-      <p class="sec-code">módulo 02</p>
-      <h1>Espelhos</h1>
-      <p class="content-lead">Reflexão da luz em superfícies planas e curvas.</p>
-
-      <div class="demo-3d">
-        <div class="mirror-demo">
-          <div class="ray ray-in"></div>
-          <div class="mirror-plate"></div>
-          <div class="ray ray-out"></div>
+      <div class="content-top">
+        <div>
+          <p class="sec-code">módulo 02</p>
+          <h1>Espelhos</h1>
         </div>
-        <p class="demo-caption">ângulo de incidência = ângulo de reflexão</p>
+        <button type="button" class="btn-speak" data-speak="texto-espelhos">🔊 Ouvir texto</button>
       </div>
-
-      <div class="info-grid">
+      <p class="content-lead">Reflexão da luz em superfícies planas e curvas.</p>
+      <div id="texto-espelhos" class="info-grid">
         <article class="info-card">
           <h3>Lei da reflexão</h3>
           <p>O ângulo de incidência é igual ao ângulo de reflexão. O raio incidente, o raio refletido e a normal estão no mesmo plano.</p>
@@ -214,7 +185,7 @@
       </div>
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="luz">← luz</a>
-        <a href="#" class="btn btn-main" data-page="olhos">próximo: olhos →</a>
+        <a href="#" class="btn btn-main" data-page="olhos">próximo →</a>
       </div>
     </main>
   </div>
@@ -222,29 +193,22 @@
   <!-- OLHOS -->
   <div id="page-olhos" class="page">
     <main class="container content-page">
-      <p class="sec-code">módulo 03</p>
-      <h1>Olhos</h1>
-      <p class="content-lead">Como o olho humano forma imagens e os principais defeitos da visão.</p>
-
-      <div class="demo-3d">
-        <div class="eye-demo">
-          <div class="eye-3d-big">
-            <div class="sclera">
-              <div class="iris-big"><div class="pupil-big"></div></div>
-            </div>
-          </div>
+      <div class="content-top">
+        <div>
+          <p class="sec-code">módulo 03</p>
+          <h1>Olhos</h1>
         </div>
-        <p class="demo-caption">córnea + cristalino → imagem na retina</p>
+        <button type="button" class="btn-speak" data-speak="texto-olhos">🔊 Ouvir texto</button>
       </div>
-
-      <div class="info-grid">
+      <p class="content-lead">Como o olho humano forma imagens e os principais defeitos da visão.</p>
+      <div id="texto-olhos" class="info-grid">
         <article class="info-card">
           <h3>Estrutura do olho</h3>
           <p>A córnea e o cristalino atuam como lentes convergentes. A imagem é formada na retina, de forma invertida. O cérebro interpreta a imagem na posição correta.</p>
         </article>
         <article class="info-card">
           <h3>Acomodação</h3>
-          <p>O cristalino muda de forma (mais ou menos convexo) para focar objetos próximos ou distantes. Isso se chama acomodação visual.</p>
+          <p>O cristalino muda de forma para focar objetos próximos ou distantes. Isso se chama acomodação visual.</p>
         </article>
         <article class="info-card">
           <h3>Defeitos da visão</h3>
@@ -262,7 +226,7 @@
       </div>
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="espelhos">← espelhos</a>
-        <a href="#" class="btn btn-main" data-page="lentes">próximo: lentes →</a>
+        <a href="#" class="btn btn-main" data-page="lentes">próximo →</a>
       </div>
     </main>
   </div>
@@ -270,21 +234,15 @@
   <!-- LENTES -->
   <div id="page-lentes" class="page">
     <main class="container content-page">
-      <p class="sec-code">módulo 04</p>
-      <h1>Lentes</h1>
-      <p class="content-lead">Lentes convergentes e divergentes e suas aplicações.</p>
-
-      <div class="demo-3d">
-        <div class="lens-demo">
-          <div class="lens-conv"></div>
-          <div class="lens-rays">
-            <span></span><span></span><span></span>
-          </div>
+      <div class="content-top">
+        <div>
+          <p class="sec-code">módulo 04</p>
+          <h1>Lentes</h1>
         </div>
-        <p class="demo-caption">lente convergente → raios para o foco</p>
+        <button type="button" class="btn-speak" data-speak="texto-lentes">🔊 Ouvir texto</button>
       </div>
-
-      <div class="info-grid">
+      <p class="content-lead">Lentes convergentes e divergentes e suas aplicações.</p>
+      <div id="texto-lentes" class="info-grid">
         <article class="info-card">
           <h3>Lentes convergentes</h3>
           <p>Mais espessas no centro. Convergem os raios para um foco real. Usadas em lupas, câmeras, projetores e para corrigir hipermetropia.</p>
@@ -309,6 +267,128 @@
       </div>
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="olhos">← olhos</a>
+        <a href="#" class="btn btn-main" data-page="bengala">próximo →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- BENGALA IR -->
+  <div id="page-bengala" class="page">
+    <main class="container content-page">
+      <div class="content-top">
+        <div>
+          <p class="sec-code">módulo 05</p>
+          <h1>Bengala com sensor infravermelho</h1>
+        </div>
+        <button type="button" class="btn-speak" data-speak="texto-bengala">🔊 Ouvir texto</button>
+      </div>
+      <p class="content-lead">Projeto de acessibilidade: detectar obstáculos com sensor IR e avisar o usuário.</p>
+
+      <div class="img-slots">
+        <figure class="img-slot">
+          <div class="img-placeholder">
+            <span>📷</span>
+            <p>Imagem 1 — Bengala / protótipo</p>
+            <small>Coloque o arquivo e use src em #img-bengala-1</small>
+          </div>
+          <img id="img-bengala-1" src="" alt="Bengala com sensor infravermelho" hidden />
+        </figure>
+        <figure class="img-slot">
+          <div class="img-placeholder">
+            <span>📷</span>
+            <p>Imagem 2 — Sensor / circuito</p>
+            <small>Coloque o arquivo e use src em #img-bengala-2</small>
+          </div>
+          <img id="img-bengala-2" src="" alt="Sensor infravermelho" hidden />
+        </figure>
+      </div>
+
+      <div id="texto-bengala" class="info-grid">
+        <article class="info-card">
+          <h3>O que é?</h3>
+          <p>Uma bengala inteligente usa sensor infravermelho (IR) para medir a distância até obstáculos à frente. Quando algo se aproxima demais, o sistema emite um alerta sonoro ou vibratório para a pessoa com deficiência visual.</p>
+        </article>
+        <article class="info-card">
+          <h3>Como funciona o sensor IR</h3>
+          <p>O sensor emite luz infravermelha (invisível) e mede a reflexão no objeto. Quanto mais próximo o obstáculo, mais intensa é a resposta do receptor. Assim dá para estimar a distância.</p>
+        </article>
+        <article class="info-card">
+          <h3>Componentes típicos</h3>
+          <p>Sensor IR de distância, microcontrolador (ex.: Arduino), buzzer ou motor de vibração, bateria e a estrutura da bengala. O código lê o sensor e aciona o alerta quando a distância fica abaixo de um limite.</p>
+        </article>
+        <article class="info-card">
+          <h3>Ideias-chave</h3>
+          <ul>
+            <li>IR = luz invisível para medir distância</li>
+            <li>Alerta sonoro ou por vibração</li>
+            <li>Acessibilidade e inclusão</li>
+            <li>Óptica + eletrônica</li>
+          </ul>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="lentes">← lentes</a>
+        <a href="#" class="btn btn-main" data-page="semaforo">próximo →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- SEMÁFORO -->
+  <div id="page-semaforo" class="page">
+    <main class="container content-page">
+      <div class="content-top">
+        <div>
+          <p class="sec-code">módulo 06</p>
+          <h1>Semáforo com Arduino</h1>
+        </div>
+        <button type="button" class="btn-speak" data-speak="texto-semaforo">🔊 Ouvir texto</button>
+      </div>
+      <p class="content-lead">Montagem e programação de um semáforo com LEDs e placa Arduino.</p>
+
+      <div class="img-slots">
+        <figure class="img-slot">
+          <div class="img-placeholder">
+            <span>📷</span>
+            <p>Imagem 1 — Semáforo / montagem</p>
+            <small>Coloque o arquivo e use src em #img-semaforo-1</small>
+          </div>
+          <img id="img-semaforo-1" src="" alt="Semáforo com Arduino" hidden />
+        </figure>
+        <figure class="img-slot">
+          <div class="img-placeholder">
+            <span>📷</span>
+            <p>Imagem 2 — Circuito / código</p>
+            <small>Coloque o arquivo e use src em #img-semaforo-2</small>
+          </div>
+          <img id="img-semaforo-2" src="" alt="Circuito do semáforo" hidden />
+        </figure>
+      </div>
+
+      <div id="texto-semaforo" class="info-grid">
+        <article class="info-card">
+          <h3>O que é?</h3>
+          <p>Um semáforo didático feito com Arduino controla três LEDs (vermelho, amarelo e verde) em sequência, imitando o tempo de um semáforo real. É um projeto clássico para aprender eletrônica e programação.</p>
+        </article>
+        <article class="info-card">
+          <h3>Materiais</h3>
+          <p>Placa Arduino (Uno ou similar), LEDs vermelho, amarelo e verde, resistores, protoboard, jumpers e cabo USB. O programa define quanto tempo cada LED fica aceso.</p>
+        </article>
+        <article class="info-card">
+          <h3>Lógica do código</h3>
+          <p>No loop: acende o verde, espera; apaga e acende o amarelo, espera; apaga e acende o vermelho, espera; e repete. Cada etapa usa digitalWrite e delay (ou millis).</p>
+        </article>
+        <article class="info-card">
+          <h3>Ideias-chave</h3>
+          <ul>
+            <li>Arduino controla LEDs por pinos digitais</li>
+            <li>Sequência temporal = semáforo</li>
+            <li>Resistores protegem os LEDs</li>
+            <li>Base para automação</li>
+          </ul>
+        </article>
+      </div>
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="bengala">← bengala IR</a>
         <a href="#" class="btn btn-main" data-page="home">voltar ao início →</a>
       </div>
     </main>
@@ -317,16 +397,22 @@
   <!-- SOBRE -->
   <div id="page-sobre" class="page">
     <main class="container content-page">
-      <p class="sec-code">informação</p>
-      <h1>Sobre este laboratório</h1>
-      <div class="info-grid single">
+      <div class="content-top">
+        <div>
+          <p class="sec-code">informação</p>
+          <h1>Sobre o Projeto IFA</h1>
+        </div>
+        <button type="button" class="btn-speak" data-speak="texto-sobre">🔊 Ouvir texto</button>
+      </div>
+      <div id="texto-sobre" class="info-grid single">
         <article class="info-card">
           <p>
-            Este caderno digital reúne os principais conceitos de Óptica estudados no 2º ano.
-            Explore os módulos, revise as ideias-chave e teste sua compreensão.
+            O Projeto IFA reúne conceitos de Óptica e dois protótipos tecnológicos:
+            a bengala com sensor infravermelho e o semáforo com Arduino.
+            Explore os módulos, revise as ideias-chave e relacione física e eletrônica.
           </p>
           <p style="margin-top:1rem;color:var(--primary);font-family:var(--hand);font-size:1.25rem;">
-            — Trabalho de Física · 2ºB
+            — Projeto IFA · 2ºB
           </p>
         </article>
       </div>
@@ -337,26 +423,53 @@
   </div>
 
   <footer class="footer">
-    <div class="container">
-      Trabalho de Física · 2ºB · FísicaLab
-    </div>
+    <div class="container">Projeto IFA · 2ºB</div>
   </footer>
 
-  <!-- Marca d'água 3D -->
   <div class="watermark" aria-hidden="true">
     <span class="wm-3d">João Dias</span>
   </div>
 
   <script>
     function showPage(id) {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
       document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
       const el = document.getElementById('page-' + id);
-      if (el) { el.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-      document.querySelectorAll('.nav-link').forEach(l => l.classList.toggle('active', l.dataset.page === id));
+      if (el) {
+        el.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      document.querySelectorAll('.nav-link').forEach(l => {
+        l.classList.toggle('active', l.dataset.page === id);
+      });
     }
+
     document.querySelectorAll('[data-page]').forEach(el => {
-      el.addEventListener('click', e => { e.preventDefault(); showPage(el.dataset.page); });
+      el.addEventListener('click', e => {
+        e.preventDefault();
+        showPage(el.dataset.page);
+      });
     });
+
+    document.querySelectorAll('.btn-speak').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-speak');
+        const box = document.getElementById(id);
+        if (!box || !window.speechSynthesis) {
+          alert('Leitura em voz alta não disponível neste navegador.');
+          return;
+        }
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(box.innerText.trim());
+        u.lang = 'pt-BR';
+        u.rate = 1;
+        btn.classList.add('speaking');
+        u.onend = () => btn.classList.remove('speaking');
+        u.onerror = () => btn.classList.remove('speaking');
+        window.speechSynthesis.speak(u);
+      });
+    });
+
     showPage('home');
   </script>
 </body>
