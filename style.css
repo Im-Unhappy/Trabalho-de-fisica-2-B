@@ -108,16 +108,13 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.92rem; font-weight: 600; cursor: pointer; border: none;
   transition: transform 0.15s, box-shadow 0.15s;
 }
-.btn-main {
-  background: var(--primary); color: var(--bg);
-}
+.btn-main { background: var(--primary); color: var(--bg); }
 .btn-main:hover { transform: translateY(-1px); box-shadow: 0 6px 0 rgba(0,0,0,0.25); }
 .btn-line {
   background: transparent; border: 1px solid var(--border); color: var(--fg);
 }
 .btn-line:hover { border-color: var(--primary); color: var(--primary); }
 
-/* Botão de voz por card */
 .card-head {
   display: flex;
   align-items: flex-start;
@@ -330,43 +327,28 @@ a { text-decoration: none; color: inherit; }
 
 .img-slot {
   margin: 0;
-  border: 1px dashed var(--border);
+  border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
   background: var(--card);
-  min-height: 180px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .img-slot img {
   width: 100%;
-  height: auto;
-  max-height: 280px;
-  object-fit: contain;
+  height: 220px;
+  object-fit: cover;
   display: block;
+  background: #0d1a15;
 }
 
-.img-placeholder {
-  text-align: center;
-  padding: 2rem 1rem;
+.img-cap {
+  font-family: var(--hand);
+  font-size: 1.05rem;
   color: var(--muted);
-}
-.img-placeholder span {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-.img-placeholder p {
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-  color: var(--fg);
-}
-.img-placeholder small {
-  font-size: 0.75rem;
-  opacity: 0.8;
+  padding: 0.55rem 0.85rem 0.7rem;
+  text-align: center;
 }
 
 .footer {
