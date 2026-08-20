@@ -337,15 +337,15 @@
     <main class="container content-page">
       <p class="sec-code">módulo 05</p>
       <h1>Bengala com sensor infravermelho</h1>
-      <p class="content-lead">Projeto de acessibilidade: detectar obstáculos com sensor IR e avisar o usuário.</p>
+      <p class="content-lead">Projeto de acessibilidade: detectar obstáculos com sensor ultrassônico (HC-SR04), LED RGB e buzzer.</p>
 
       <div class="img-slots">
         <figure class="img-slot">
-          <img id="img-bengala-1" src="WhatsApp Image 2026-06-10 at 09.31.10 (3).jpeg" alt="Protótipo da bengala com sensor, Arduino e fios na mesa" />
+          <img id="img-bengala-1" src="WhatsApp Image 2026-06-10 at 09.31.11 (2).jpeg" alt="Protótipo da bengala com sensor, Arduino e fios na mesa" />
           <figcaption class="img-cap">Protótipo da bengala com sensor e circuitos</figcaption>
         </figure>
         <figure class="img-slot">
-          <img id="img-bengala-2" src=" WhatsApp Image 2026-06-10 at 09.31.10 (4).jpeg" alt="Bengala com sensor e cartaz do projeto na sala de aula" />
+          <img id="img-bengala-2" src="WhatsApp Image 2026-06-10 at 09.31.10 (4).jpeg" alt="Bengala com sensor e cartaz do projeto na sala de aula" />
           <figcaption class="img-cap">Exposição do projeto — Bengala de Sensor</figcaption>
         </figure>
       </div>
@@ -357,16 +357,16 @@
             <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
           </div>
           <div class="speak-text">
-            <p>Uma bengala inteligente usa sensor infravermelho (IR) para medir a distância até obstáculos à frente. Quando algo se aproxima demais, o sistema emite um alerta sonoro ou vibratório para a pessoa com deficiência visual.</p>
+            <p>Uma bengala inteligente usa sensor de distância para detectar obstáculos à frente. Quando algo se aproxima, o sistema muda a cor do LED RGB e emite alerta sonoro no buzzer para a pessoa com deficiência visual.</p>
           </div>
         </article>
         <article class="info-card">
           <div class="card-head">
-            <h3>Como funciona o sensor IR</h3>
+            <h3>Como funciona o sensor</h3>
             <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
           </div>
           <div class="speak-text">
-            <p>O sensor emite luz infravermelha (invisível) e mede a reflexão no objeto. Quanto mais próximo o obstáculo, mais intensa é a resposta do receptor. Assim dá para estimar a distância.</p>
+            <p>O HC-SR04 emite um pulso ultrassônico e mede o tempo do eco. Com isso calcula a distância em centímetros. Conforme a distância, o LED fica verde, amarelo ou vermelho e o buzzer muda o tom.</p>
           </div>
         </article>
         <article class="info-card">
@@ -375,7 +375,7 @@
             <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
           </div>
           <div class="speak-text">
-            <p>Sensor IR de distância, microcontrolador (ex.: Arduino), buzzer ou motor de vibração, bateria e a estrutura da bengala. O código lê o sensor e aciona o alerta quando a distância fica abaixo de um limite.</p>
+            <p>Sensor HC-SR04, Arduino, buzzer, LED RGB, bateria e a estrutura da bengala. O código lê a distância e aciona LED e som conforme faixas (acima de 200 cm, entre 100 e 200 cm, abaixo de 100 cm).</p>
           </div>
         </article>
         <article class="info-card">
@@ -385,10 +385,10 @@
           </div>
           <div class="speak-text">
             <ul>
-              <li>IR = luz invisível para medir distância</li>
-              <li>Alerta sonoro ou por vibração</li>
+              <li>HC-SR04 mede distância por ultrassom</li>
+              <li>LED RGB indica o nível de risco</li>
+              <li>Buzzer alerta por som</li>
               <li>Acessibilidade e inclusão</li>
-              <li>Óptica + eletrônica</li>
             </ul>
           </div>
         </article>
@@ -396,22 +396,82 @@
 
       <article class="code-box">
         <div class="code-box-head">
-          <h3>Código Arduino — Bengala IR</h3>
-          <span class="code-tag">cole seu código aqui</span>
+          <h3>Código Arduino — Bengala</h3>
+          <span class="code-tag">.ino</span>
         </div>
-        <pre class="code-block"><code>// Cole aqui o código da bengala com sensor IR
-// Exemplo de estrutura:
+        <pre class="code-block"><code>// HC-SR04
+const int trigPin = 9;
+const int echoPin = 10;
 
-// #define pinSensor ...
-// #define pinBuzzer ...
+// Buzzer
+const int buzzerPin = 8;
 
-// void setup() {
-//   ...
-// }
+// LED RGB (cátodo comum)
+const int redPin = 3;
+const int greenPin = 5;
+const int bluePin = 6;
 
-// void loop() {
-//   ...
-// }</code></pre>
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  pinMode(buzzerPin, OUTPUT);
+
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  long duration;
+  float distance;
+
+  // Pulso do HC-SR04
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+
+  digitalWrite(trigPin, LOW);
+
+  duration = pulseIn(echoPin, HIGH);
+
+  // Distância em cm
+  distance = duration * 0.0343 / 2;
+
+  Serial.print("Distancia: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+
+  // Controle das cores e buzzer
+  if (distance > 200) {
+    // Verde
+    setColor(0, 255, 0);
+    noTone(buzzerPin);
+  }
+  else if (distance >= 100) {
+    // Amarelo
+    setColor(255, 255, 0);
+    tone(buzzerPin, 1000); // Som médio
+  }
+  else {
+    // Vermelho
+    setColor(255, 0, 0);
+    tone(buzzerPin, 4000); // Som mais agudo
+  }
+
+  delay(100);
+}
+
+// Função para controlar o LED RGB
+void setColor(int red, int green, int blue) {
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);
+}</code></pre>
       </article>
 
       <div class="page-nav">
@@ -427,6 +487,13 @@
       <p class="sec-code">módulo 06</p>
       <h1>Semáforo com Arduino</h1>
       <p class="content-lead">Montagem e programação de um semáforo com LEDs e placa Arduino.</p>
+
+      <div class="img-slots img-slots-1">
+        <figure class="img-slot">
+          <img id="img-semaforo-1" src="Captura de tela de 2026-08-03 13-41-01.png" alt="Protótipo do semáforo com Arduino" />
+          <figcaption class="img-cap">Protótipo do semáforo com Arduino</figcaption>
+        </figure>
+      </div>
 
       <div class="info-grid">
         <article class="info-card">
@@ -541,7 +608,7 @@ void loop() {
           <div class="speak-text">
             <p>
               O Projeto IFA reúne conceitos de Óptica e dois protótipos tecnológicos:
-              a bengala com sensor infravermelho e o semáforo com Arduino.
+              a bengala com sensor e o semáforo com Arduino.
               Explore os módulos, revise as ideias-chave e relacione física e eletrônica.
             </p>
             <p style="margin-top:1rem;color:var(--primary);font-family:var(--hand);font-size:1.25rem;">
