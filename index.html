@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto IFA</title>
-  <meta name="description" content="Projeto IFA — óptica, bengala com sensor infravermelho e semáforo com Arduino." />
+  <meta name="description" content="Projeto IFA — óptica, bengala, semáforo e pontos acessíveis na escola." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -31,6 +31,7 @@
         <a href="#" data-page="lentes" class="nav-link">Lentes</a>
         <a href="#" data-page="bengala" class="nav-link">Bengala IR</a>
         <a href="#" data-page="semaforo" class="nav-link">Semáforo</a>
+        <a href="#" data-page="pontos" class="nav-link">Pontos acessíveis</a>
       </nav>
     </div>
   </header>
@@ -43,15 +44,15 @@
           <p class="chip">projeto escolar · 2ºB</p>
           <h1>Projeto<br /><em>IFA</em></h1>
           <p class="lead">
-            Óptica, bengala com sensor infravermelho e semáforo com Arduino —
-            um caderno de investigação para explorar luz, visão e tecnologia.
+            Óptica, bengala com sensor, semáforo com Arduino e pontos acessíveis na escola —
+            um caderno de investigação para explorar luz, visão, tecnologia e inclusão.
           </p>
           <div class="cta-row">
             <a href="#" class="btn btn-main" data-page="luz">iniciar percurso ↓</a>
             <a href="#" class="btn btn-line" data-page="sobre">sobre o projeto →</a>
           </div>
           <div class="metrics">
-            <div class="metric"><strong>06</strong><span>módulos</span></div>
+            <div class="metric"><strong>07</strong><span>módulos</span></div>
             <div class="metric"><strong>02</strong><span>projetos tech</span></div>
             <div class="metric"><strong>01</strong><span>ideia central</span></div>
           </div>
@@ -96,12 +97,17 @@
           <article class="mod-card" data-page="bengala">
             <span class="mod-id">05</span>
             <h3>Bengala com sensor IR</h3>
-            <p>Sensor infravermelho e acessibilidade.</p>
+            <p>Sensor e acessibilidade.</p>
           </article>
           <article class="mod-card" data-page="semaforo">
             <span class="mod-id">06</span>
             <h3>Semáforo com Arduino</h3>
             <p>Circuitos, LEDs e programação.</p>
+          </article>
+          <article class="mod-card" data-page="pontos">
+            <span class="mod-id">07</span>
+            <h3>Pontos acessíveis na escola</h3>
+            <p>Mapa e locais de inclusão.</p>
           </article>
         </div>
       </section>
@@ -116,30 +122,30 @@
       <p class="content-lead">Estudo do espectro luminoso, da decomposição da luz branca e das cores.</p>
       <div class="img-slots">
         <figure class="img-slot">
-          <img src="luz_1.jpeg" alt="Prisma e espectro de cores" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Prism_rainbow_schema.png/640px-Prism_rainbow_schema.png" alt="Prisma e espectro" />
           <figcaption class="img-cap">Prisma e decomposição da luz branca</figcaption>
         </figure>
         <figure class="img-slot">
-          <img src="luz_2.jpeg" alt="Dispersão da luz" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Dispersion_prisma.jpg/640px-Dispersion_prisma.jpg'" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Dispersion_prisma.jpg/640px-Dispersion_prisma.jpg" alt="Dispersão" onerror="this.style.display='none'" />
           <figcaption class="img-cap">Dispersão e cores do espectro</figcaption>
         </figure>
       </div>
       <div class="info-grid">
         <article class="info-card">
-          <div class="card-head"><h3>O que é a luz?</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>A luz é uma onda eletromagnética visível. No vácuo, sua velocidade é aproximadamente <strong>c = 3 × 10⁸ m/s</strong>. A relação fundamental é <strong>c = λf</strong>, onde λ é o comprimento de onda e f a frequência.</p></div>
+          <div class="card-head"><h3>O que é a luz?</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>A luz é uma onda eletromagnética visível. No vácuo, sua velocidade é aproximadamente <strong>c = 3 × 10⁸ m/s</strong>. A relação fundamental é <strong>c = λf</strong>.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Decomposição da luz</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Quando a luz branca atravessa um prisma, ela se decompõe nas cores do espectro: vermelho, laranja, amarelo, verde, azul, anil e violeta. Cada cor tem um índice de refração diferente.</p></div>
+          <div class="card-head"><h3>Decomposição da luz</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Quando a luz branca atravessa um prisma, ela se decompõe nas cores do espectro.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Espectro visível</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>O espectro visível vai de cerca de 400 nm (violeta) a 700 nm (vermelho). Fora dessa faixa estão o ultravioleta e o infravermelho, invisíveis ao olho humano.</p></div>
+          <div class="card-head"><h3>Espectro visível</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>O espectro visível vai de cerca de 400 nm (violeta) a 700 nm (vermelho).</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><ul><li>Luz = onda eletromagnética</li><li>c = λf</li><li>Prisma decompõe a luz branca</li><li>Cada cor tem λ diferente</li></ul></div>
+          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><ul><li>Luz = onda eletromagnética</li><li>c = λf</li><li>Prisma decompõe a luz branca</li></ul></div>
         </article>
       </div>
       <div class="page-nav">
@@ -157,30 +163,30 @@
       <p class="content-lead">Reflexão da luz em superfícies planas e curvas.</p>
       <div class="img-slots">
         <figure class="img-slot">
-          <img src="espelho_1.jpeg" alt="Reflexão especular" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Specular_reflection.png/640px-Specular_reflection.png" alt="Reflexão" />
           <figcaption class="img-cap">Reflexão especular da luz</figcaption>
         </figure>
         <figure class="img-slot">
-          <img src="espelho_2.jpeg" alt="Lei da reflexão" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mirror.jpg/640px-Mirror.jpg'" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mirror.jpg/640px-Mirror.jpg" alt="Espelho" onerror="this.style.display='none'" />
           <figcaption class="img-cap">Ângulo de incidência = ângulo de reflexão</figcaption>
         </figure>
       </div>
       <div class="info-grid">
         <article class="info-card">
-          <div class="card-head"><h3>Lei da reflexão</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>O ângulo de incidência é igual ao ângulo de reflexão. O raio incidente, o raio refletido e a normal estão no mesmo plano.</p></div>
+          <div class="card-head"><h3>Lei da reflexão</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>O ângulo de incidência é igual ao ângulo de reflexão.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Espelho plano</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Forma imagens virtuais, direitas, do mesmo tamanho e simétricas em relação ao espelho. A distância objeto-espelho é igual à distância imagem-espelho.</p></div>
+          <div class="card-head"><h3>Espelho plano</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Forma imagens virtuais, direitas e simétricas.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Espelhos esféricos</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p><strong>Côncavos:</strong> imagens reais ou virtuais, ampliadas ou reduzidas. <strong>Convexos:</strong> sempre virtuais, direitas e menores.</p></div>
+          <div class="card-head"><h3>Espelhos esféricos</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p><strong>Côncavos</strong> e <strong>convexos</strong> formam imagens diferentes.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><ul><li>i = r (lei da reflexão)</li><li>Plano → imagem virtual e simétrica</li><li>Côncavo → foco real</li><li>Convexo → foco virtual</li></ul></div>
+          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><ul><li>i = r</li><li>Plano → virtual</li><li>Côncavo / convexo</li></ul></div>
         </article>
       </div>
       <div class="page-nav">
@@ -195,33 +201,33 @@
     <main class="container content-page">
       <p class="sec-code">módulo 03</p>
       <h1>Olhos</h1>
-      <p class="content-lead">Como o olho humano forma imagens e os principais defeitos da visão.</p>
+      <p class="content-lead">Como o olho humano forma imagens e os defeitos da visão.</p>
       <div class="img-slots">
         <figure class="img-slot">
-          <img src="olho_1.jpeg" alt="Diagrama do olho humano" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Human_eye_cross-sectional_view.jpg/640px-Human_eye_cross-sectional_view.jpg'" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye-diagram.png/640px-Eye-diagram.png" alt="Olho" onerror="this.style.display='none'" />
           <figcaption class="img-cap">Estrutura do olho humano</figcaption>
         </figure>
         <figure class="img-slot">
-          <img src="olho_2.jpeg" alt="Corte do olho" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Schematic_diagram_of_the_human_eye_pt.svg/640px-Schematic_diagram_of_the_human_eye_pt.svg.png'" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Human_eye_cross-sectional_view.jpg/640px-Human_eye_cross-sectional_view.jpg" alt="Corte do olho" onerror="this.style.display='none'" />
           <figcaption class="img-cap">Formação da imagem na retina</figcaption>
         </figure>
       </div>
       <div class="info-grid">
         <article class="info-card">
-          <div class="card-head"><h3>Estrutura do olho</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>A córnea e o cristalino atuam como lentes convergentes. A imagem é formada na retina, de forma invertida. O cérebro interpreta a imagem na posição correta.</p></div>
+          <div class="card-head"><h3>Estrutura do olho</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Córnea e cristalino atuam como lentes. A imagem forma-se na retina.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Acomodação</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>O cristalino muda de forma para focar objetos próximos ou distantes. Isso se chama acomodação visual.</p></div>
+          <div class="card-head"><h3>Acomodação</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>O cristalino muda de forma para focar objetos próximos ou distantes.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Defeitos da visão</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p><strong>Miopia:</strong> imagem antes da retina → lente divergente. <strong>Hipermetropia:</strong> imagem atrás da retina → lente convergente. <strong>Astigmatismo:</strong> córnea irregular → lentes cilíndricas.</p></div>
+          <div class="card-head"><h3>Defeitos da visão</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Miopia, hipermetropia e astigmatismo.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><ul><li>Córnea + cristalino = lentes</li><li>Imagem na retina</li><li>Miopia → divergente</li><li>Hipermetropia → convergente</li></ul></div>
+          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><ul><li>Imagem na retina</li><li>Miopia → divergente</li><li>Hipermetropia → convergente</li></ul></div>
         </article>
       </div>
       <div class="page-nav">
@@ -239,30 +245,30 @@
       <p class="content-lead">Lentes convergentes e divergentes e suas aplicações.</p>
       <div class="img-slots">
         <figure class="img-slot">
-          <img src="lentes_1.jpeg" alt="Lente convergente" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Lens1.svg/640px-Lens1.svg.png'" />
-          <figcaption class="img-cap">Lente convergente (convexa)</figcaption>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Convex_lens.svg/640px-Convex_lens.svg.png" alt="Lente convergente" onerror="this.style.display='none'" />
+          <figcaption class="img-cap">Lente convergente</figcaption>
         </figure>
         <figure class="img-slot">
-          <img src="lentes_2.jpeg" alt="Lente divergente" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diverging_lens.svg/640px-Diverging_lens.svg.png'" />
-          <figcaption class="img-cap">Lente divergente (côncava)</figcaption>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Concave_lens.svg/640px-Concave_lens.svg.png" alt="Lente divergente" onerror="this.style.display='none'" />
+          <figcaption class="img-cap">Lente divergente</figcaption>
         </figure>
       </div>
       <div class="info-grid">
         <article class="info-card">
-          <div class="card-head"><h3>Lentes convergentes</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Mais espessas no centro. Convergem os raios para um foco real. Usadas em lupas, câmeras, projetores e para corrigir hipermetropia.</p></div>
+          <div class="card-head"><h3>Lentes convergentes</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Mais espessas no centro. Convergem os raios para um foco real.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Lentes divergentes</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Mais espessas nas bordas. Divergem os raios (foco virtual). Usadas para corrigir miopia e em sistemas ópticos.</p></div>
+          <div class="card-head"><h3>Lentes divergentes</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Mais espessas nas bordas. Divergem os raios.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Equação das lentes</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Equação de Gauss: <strong>1/f = 1/p + 1/p'</strong>, onde f é a distância focal, p a distância do objeto e p' a distância da imagem.</p></div>
+          <div class="card-head"><h3>Equação das lentes</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p><strong>1/f = 1/p + 1/p'</strong></p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><ul><li>Convergente → foco real</li><li>Divergente → foco virtual</li><li>1/f = 1/p + 1/p'</li><li>Aplicações no dia a dia</li></ul></div>
+          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><ul><li>Convergente → foco real</li><li>Divergente → foco virtual</li></ul></div>
         </article>
       </div>
       <div class="page-nav">
@@ -276,34 +282,34 @@
   <div id="page-bengala" class="page">
     <main class="container content-page">
       <p class="sec-code">módulo 05</p>
-      <h1>Bengala com sensor infravermelho</h1>
-      <p class="content-lead">Projeto de acessibilidade: detectar obstáculos com sensor ultrassônico (HC-SR04), LED RGB e buzzer.</p>
+      <h1>Bengala com sensor</h1>
+      <p class="content-lead">Detectar obstáculos com HC-SR04, LED RGB e buzzer.</p>
       <div class="img-slots">
         <figure class="img-slot">
-          <img id="img-bengala-1" src="WhatsApp Image 2026-06-10 at 09.31.11 (2).jpeg" alt="Protótipo da bengala com sensor" />
-          <figcaption class="img-cap">Protótipo da bengala com sensor e circuitos</figcaption>
+          <img src="WhatsApp Image 2026-06-10 at 09.31.11 (2).jpeg" alt="Bengala 1" />
+          <figcaption class="img-cap">Protótipo da bengala</figcaption>
         </figure>
         <figure class="img-slot">
-          <img id="img-bengala-2" src="WhatsApp Image 2026-06-10 at 09.31.10 (4).jpeg" alt="Exposição do projeto" />
-          <figcaption class="img-cap">Exposição do projeto — Bengala de Sensor</figcaption>
+          <img src="WhatsApp Image 2026-06-10 at 09.31.10 (4).jpeg" alt="Bengala 2" />
+          <figcaption class="img-cap">Exposição do projeto</figcaption>
         </figure>
       </div>
       <div class="info-grid">
         <article class="info-card">
-          <div class="card-head"><h3>O que é?</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Uma bengala inteligente usa sensor de distância para detectar obstáculos à frente. Quando algo se aproxima, o sistema muda a cor do LED RGB e emite alerta sonoro no buzzer.</p></div>
+          <div class="card-head"><h3>O que é?</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Bengala inteligente com sensor de distância, LED RGB e buzzer.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Como funciona o sensor</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>O HC-SR04 emite um pulso ultrassônico e mede o tempo do eco. Com isso calcula a distância em centímetros. Conforme a distância, o LED fica verde, amarelo ou vermelho e o buzzer muda o tom.</p></div>
+          <div class="card-head"><h3>Como funciona</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>O HC-SR04 mede a distância. LED e buzzer mudam conforme a proximidade.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Componentes típicos</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Sensor HC-SR04, Arduino, buzzer, LED RGB, bateria e a estrutura da bengala.</p></div>
+          <div class="card-head"><h3>Componentes</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>HC-SR04, Arduino, buzzer, LED RGB e bateria.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><ul><li>HC-SR04 mede distância por ultrassom</li><li>LED RGB indica o nível de risco</li><li>Buzzer alerta por som</li><li>Acessibilidade e inclusão</li></ul></div>
+          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><ul><li>Ultrassom mede distância</li><li>LED indica risco</li><li>Buzzer alerta</li></ul></div>
         </article>
       </div>
       <article class="code-box">
@@ -334,9 +340,9 @@ void loop() {
   long duration = pulseIn(echoPin, HIGH);
   float distance = duration * 0.0343 / 2;
   Serial.println(distance);
-  if (distance > 200) { setColor(0, 255, 0); noTone(buzzerPin); }
-  else if (distance >= 100) { setColor(255, 255, 0); tone(buzzerPin, 1000); }
-  else { setColor(255, 0, 0); tone(buzzerPin, 4000); }
+  if (distance > 200) { setColor(0,255,0); noTone(buzzerPin); }
+  else if (distance >= 100) { setColor(255,255,0); tone(buzzerPin,1000); }
+  else { setColor(255,0,0); tone(buzzerPin,4000); }
   delay(100);
 }
 
@@ -358,32 +364,32 @@ void setColor(int r, int g, int b) {
     <main class="container content-page">
       <p class="sec-code">módulo 06</p>
       <h1>Semáforo com Arduino</h1>
-      <p class="content-lead">Montagem e programação de um semáforo com LEDs e placa Arduino.</p>
-            <div class="img-slots">
+      <p class="content-lead">Montagem e programação de um semáforo com LEDs.</p>
+      <div class="img-slots">
         <figure class="img-slot">
-          <img id="img-semaforo-1" src="semafaro.jpg" alt="Protótipo do semáforo com Arduino" />
-          <figcaption class="img-cap">Protótipo do semáforo com Arduino</figcaption>
+          <img src="semafaro.jpg" alt="Semáforo 1" />
+          <figcaption class="img-cap">Protótipo do semáforo</figcaption>
         </figure>
         <figure class="img-slot">
-          <img id="img-semaforo-2" src="semafaro_2.jpg" alt="Semáforo — segunda foto" />
+          <img src="semafaro_2.jpg" alt="Semáforo 2" />
           <figcaption class="img-cap">Montagem do semáforo</figcaption>
         </figure>
       </div>
       <div class="info-grid">
         <article class="info-card">
-          <div class="card-head"><h3>O que é?</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
-          <div class="speak-text"><p>Um semáforo didático feito com Arduino controla três LEDs em sequência.</p></div>
+          <div class="card-head"><h3>O que é?</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
+          <div class="speak-text"><p>Semáforo didático com Arduino e três LEDs em sequência.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Materiais</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
+          <div class="card-head"><h3>Materiais</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
           <div class="speak-text"><p>Arduino, LEDs, resistores, protoboard e jumpers.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Lógica do código</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
+          <div class="card-head"><h3>Lógica</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
           <div class="speak-text"><p>Verde → amarelo → vermelho, com delays.</p></div>
         </article>
         <article class="info-card">
-          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button></div>
+          <div class="card-head"><h3>Ideias-chave</h3><button type="button" class="btn-speak-sm" data-speak-card>🔊</button></div>
           <div class="speak-text"><ul><li>Pinos digitais</li><li>Sequência temporal</li><li>Automação</li></ul></div>
         </article>
       </div>
@@ -415,14 +421,79 @@ void loop() {
       <article class="video-box">
         <div class="code-box-head">
           <h3>Vídeo do projeto</h3>
-          <a class="code-tag" href="https://www.youtube.com/watch?v=YH5YQ-wj_aY" target="_blank" rel="noopener">abrir no YouTube</a>
+          <a class="code-tag" href="https://www.youtube.com/watch?v=YH5YQ-wj_aY" target="_blank" rel="noopener">YouTube</a>
         </div>
         <div class="video-wrap">
           <iframe src="https://www.youtube.com/embed/YH5YQ-wj_aY" title="Semáforo" allowfullscreen></iframe>
         </div>
       </article>
       <div class="page-nav">
-        <a href="#" class="btn btn-line" data-page="bengala">← bengala IR</a>
+        <a href="#" class="btn btn-line" data-page="bengala">← bengala</a>
+        <a href="#" class="btn btn-main" data-page="pontos">próximo →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- PONTOS ACESSÍVEIS -->
+  <div id="page-pontos" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 07</p>
+      <h1>Pontos acessíveis na escola</h1>
+      <p class="content-lead">Locais e recursos da escola pensados para inclusão e acessibilidade.</p>
+
+      <div class="img-slots img-slots-1">
+        <figure class="img-slot">
+          <img id="img-pontos-1" src="escola.png" alt="Pontos acessíveis na escola" />
+          <figcaption class="img-cap">Pontos acessíveis na escola</figcaption>
+        </figure>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="card-head">
+            <h3>O que são?</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Pontos acessíveis são locais ou recursos da escola que facilitam a circulação, o aprendizado e a participação de pessoas com deficiência ou mobilidade reduzida.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Por que mapear?</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Mapear esses pontos ajuda a identificar o que já funciona e o que ainda pode melhorar, tornando a escola mais inclusiva no dia a dia.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Exemplos comuns</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Rampas, corrimãos, banheiros adaptados, sinalização, elevadores, pisos táteis e áreas de circulação livre de obstáculos.</p>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Ideias-chave</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <ul>
+              <li>Inclusão no ambiente escolar</li>
+              <li>Acessibilidade física e visual</li>
+              <li>Observação e registro dos locais</li>
+              <li>Melhoria contínua</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="semaforo">← semáforo</a>
         <a href="#" class="btn btn-main" data-page="home">voltar ao início →</a>
       </div>
     </main>
@@ -433,7 +504,6 @@ void loop() {
     <main class="container content-page">
       <p class="sec-code">informação</p>
       <h1>Sobre o Projeto IFA</h1>
-
       <div class="info-grid single">
         <article class="info-card">
           <div class="card-head">
@@ -442,9 +512,7 @@ void loop() {
           </div>
           <div class="speak-text">
             <p>
-              O Projeto IFA reúne conceitos de Óptica e dois protótipos tecnológicos:
-              a bengala com sensor e o semáforo com Arduino.
-              Explore os módulos, revise as ideias-chave e relacione física e eletrônica.
+              O Projeto IFA reúne conceitos de Óptica, protótipos com Arduino e o mapeamento de pontos acessíveis na escola.
             </p>
             <p style="margin-top:1rem;color:var(--primary);font-family:var(--hand);font-size:1.25rem;">
               — Projeto IFA · 2ºB
@@ -456,26 +524,11 @@ void loop() {
       <section class="team-section">
         <h2 class="team-title">Integrantes do grupo</h2>
         <div class="team-grid">
-          <article class="team-card">
-            <div class="team-avatar">JD</div>
-            <h3>João Dias</h3>
-          </article>
-          <article class="team-card">
-            <div class="team-avatar">RP</div>
-            <h3>Rikelme Pereira</h3>
-          </article>
-          <article class="team-card">
-            <div class="team-avatar">PG</div>
-            <h3>Pedro Glegori</h3>
-          </article>
-          <article class="team-card">
-            <div class="team-avatar">NF</div>
-            <h3>Nicolas Fraga</h3>
-          </article>
-          <article class="team-card">
-            <div class="team-avatar">EO</div>
-            <h3>Erick Oliveira</h3>
-          </article>
+          <article class="team-card"><div class="team-avatar">JD</div><h3>João Dias</h3></article>
+          <article class="team-card"><div class="team-avatar">RP</div><h3>Rikelme Pereira</h3></article>
+          <article class="team-card"><div class="team-avatar">PG</div><h3>Pedro Glegori</h3></article>
+          <article class="team-card"><div class="team-avatar">NF</div><h3>Nicolas Fraga</h3></article>
+          <article class="team-card"><div class="team-avatar">EO</div><h3>Erick Oliveira</h3></article>
         </div>
       </section>
 
