@@ -499,6 +499,16 @@ a { text-decoration: none; color: inherit; }
   max-width: 520px;
 }
 
+.img-slots-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .img-slots-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .img-slot {
   margin: 0;
   border: 1px solid var(--border);

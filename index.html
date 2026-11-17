@@ -32,6 +32,7 @@
         <a href="#" data-page="bengala" class="nav-link">Bengala IR</a>
         <a href="#" data-page="semaforo" class="nav-link">Semáforo</a>
         <a href="#" data-page="pontos" class="nav-link">Pontos acessíveis</a>
+        <a href="#" data-page="guardiao" class="nav-link">Guardião do Silêncio</a>
       </nav>
     </div>
   </header>
@@ -44,7 +45,7 @@
           <p class="chip">projeto escolar · 2ºB</p>
           <h1>Projeto<br /><em>IFA</em></h1>
           <p class="lead">
-            Óptica, bengala com sensor, semáforo com Arduino e pontos acessíveis na escola —
+            Óptica, bengala com sensor, semáforo com Arduino, pontos acessíveis e o Guardião do Silêncio —
             um caderno de investigação para explorar luz, visão, tecnologia e inclusão.
           </p>
           <div class="cta-row">
@@ -52,8 +53,8 @@
             <a href="#" class="btn btn-line" data-page="sobre">sobre o projeto →</a>
           </div>
           <div class="metrics">
-            <div class="metric"><strong>07</strong><span>módulos</span></div>
-            <div class="metric"><strong>02</strong><span>projetos tech</span></div>
+            <div class="metric"><strong>08</strong><span>módulos</span></div>
+            <div class="metric"><strong>03</strong><span>projetos tech</span></div>
             <div class="metric"><strong>01</strong><span>ideia central</span></div>
           </div>
         </div>
@@ -108,6 +109,11 @@
             <span class="mod-id">07</span>
             <h3>Pontos acessíveis na escola</h3>
             <p>Mapa e locais de inclusão.</p>
+          </article>
+          <article class="mod-card" data-page="guardiao">
+            <span class="mod-id">08</span>
+            <h3>Guardião do Silêncio</h3>
+            <p>Sensor de som e níveis de ruído.</p>
           </article>
         </div>
       </section>
@@ -494,6 +500,150 @@ void loop() {
 
       <div class="page-nav">
         <a href="#" class="btn btn-line" data-page="semaforo">← semáforo</a>
+        <a href="#" class="btn btn-main" data-page="guardiao">próximo →</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- GUARDIÃO DO SILÊNCIO -->
+  <div id="page-guardiao" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 08</p>
+      <h1>Guardião do Silêncio</h1>
+      <p class="content-lead">Projeto de monitoramento sonoro: do primeiro protótipo até a versão final funcionando, com níveis de ruído de 0% a 100%.</p>
+
+      <div class="img-slots img-slots-3">
+        <figure class="img-slot">
+          <img id="img-guardiao-1" src="IMG-20261117-WA0001.jpg" alt="Guardião do Silêncio — imagem 1" />
+          <figcaption class="img-cap">Foto 1 do projeto</figcaption>
+        </figure>
+        <figure class="img-slot">
+          <img id="img-guardiao-2" src="IMG-20261117-WA0002.jpg" alt="Guardião do Silêncio — imagem 2" />
+          <figcaption class="img-cap">Foto 2 do projeto</figcaption>
+        </figure>
+        <figure class="img-slot">
+          <img id="img-guardiao-3" src="IMG-20261117-WA0000.jpg" alt="Guardião do Silêncio — imagem 3" />
+          <figcaption class="img-cap">Foto 3 do projeto</figcaption>
+        </figure>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Entrega 1 — Construção e problema no LED</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Montamos o primeiro protótipo do Guardião do Silêncio, com sensor de som, microcontrolador e LED indicadores. Nesta etapa o modo de construção ficou definido, mas encontramos um problema: o LED não estava funcionando corretamente.</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Entrega 2 — Código aprimorado e falha na tela</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Pesquisamos soluções e aprimoramos os códigos do projeto. Mesmo assim, surgiu um novo problema: a tela não marcava o som, ou seja, a leitura do nível sonoro não aparecia de forma confiável na interface.</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Entrega 3 — Refazendo tudo</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Tentamos corrigir os erros da etapa anterior e, para garantir uma base mais estável, refizemos o projeto do zero: montagem, ligações e estrutura do código foram revisadas novamente.</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Entrega 4 — Funcionando com faixas de som</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Conseguimos arrumar a leitura do som e adicionamos uma variável para classificar o nível de ruído em faixas:</p>
+            <ul>
+              <li><strong>0% a 25%</strong> — conversas</li>
+              <li><strong>25% a 75%</strong> — gritaria</li>
+              <li><strong>75% a 100%</strong> — impossível ouvir alguém</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Entrega 5 — Projeto finalizado</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Finalizamos o Guardião do Silêncio com todos os erros corrigidos. O sistema passou a funcionar de forma estável: sensor, leitura, faixas de ruído e indicadores operando como planejado.</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Ideias-chave</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <ul>
+              <li>Monitoramento de nível sonoro</li>
+              <li>Faixas de 0% a 100%</li>
+              <li>Iteração: erro → teste → correção</li>
+              <li>Protótipo funcional no final</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <article class="code-box">
+        <div class="code-box-head">
+          <h3>Código — Guardião do Silêncio</h3>
+          <span class="code-tag">cole o código aqui</span>
+        </div>
+        <pre class="code-block"><code>// Guardião do Silêncio
+// Cole aqui o código final do projeto
+
+// Exemplo de estrutura com faixas de som:
+// 0% a 25%   → conversas
+// 25% a 75%  → gritaria
+// 75% a 100% → impossível ouvir alguém
+
+/*
+const int pinMic = A0;
+const int pinLed = 13;
+
+void setup() {
+  pinMode(pinLed, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int leitura = analogRead(pinMic);
+  int nivel = map(leitura, 0, 1023, 0, 100);
+
+  Serial.print("Nivel: ");
+  Serial.print(nivel);
+  Serial.println("%");
+
+  if (nivel <= 25) {
+    // conversas
+  } else if (nivel <= 75) {
+    // gritaria
+  } else {
+    // impossível ouvir alguém
+  }
+
+  delay(100);
+}
+*/</code></pre>
+      </article>
+
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="pontos">← pontos acessíveis</a>
         <a href="#" class="btn btn-main" data-page="home">voltar ao início →</a>
       </div>
     </main>
@@ -512,7 +662,7 @@ void loop() {
           </div>
           <div class="speak-text">
             <p>
-              O Projeto IFA reúne conceitos de Óptica, protótipos com Arduino e o mapeamento de pontos acessíveis na escola.
+              O Projeto IFA reúne conceitos de Óptica, protótipos com Arduino, mapeamento de pontos acessíveis na escola e o Guardião do Silêncio.
             </p>
             <p style="margin-top:1rem;color:var(--primary);font-family:var(--hand);font-size:1.25rem;">
               — Projeto IFA · 2ºB
