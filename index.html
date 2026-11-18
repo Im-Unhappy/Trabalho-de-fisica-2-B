@@ -33,6 +33,7 @@
         <a href="#" data-page="semaforo" class="nav-link">Semáforo</a>
         <a href="#" data-page="pontos" class="nav-link">Pontos acessíveis</a>
         <a href="#" data-page="guardiao" class="nav-link">Guardião do Silêncio</a>
+        <a href="#" data-page="mapeamento" class="nav-link">Mapeamento</a>
       </nav>
     </div>
   </header>
@@ -45,7 +46,7 @@
           <p class="chip">projeto escolar · 2ºB</p>
           <h1>Projeto<br /><em>IFA</em></h1>
           <p class="lead">
-            Óptica, bengala com sensor, semáforo com Arduino, pontos acessíveis e o Guardião do Silêncio —
+            Óptica, bengala com sensor, semáforo com Arduino, pontos acessíveis, Guardião do Silêncio e mapeamento acústico —
             um caderno de investigação para explorar luz, visão, tecnologia e inclusão.
           </p>
           <div class="cta-row">
@@ -53,7 +54,7 @@
             <a href="#" class="btn btn-line" data-page="sobre">sobre o projeto →</a>
           </div>
           <div class="metrics">
-            <div class="metric"><strong>08</strong><span>módulos</span></div>
+            <div class="metric"><strong>09</strong><span>módulos</span></div>
             <div class="metric"><strong>03</strong><span>projetos tech</span></div>
             <div class="metric"><strong>01</strong><span>ideia central</span></div>
           </div>
@@ -114,6 +115,11 @@
             <span class="mod-id">08</span>
             <h3>Guardião do Silêncio</h3>
             <p>Sensor de som e níveis de ruído.</p>
+          </article>
+          <article class="mod-card" data-page="mapeamento">
+            <span class="mod-id">09</span>
+            <h3>Mapeamento Acústico</h3>
+            <p>Ruído médio e risco nas salas.</p>
           </article>
         </div>
       </section>
@@ -514,15 +520,15 @@ void loop() {
 
       <div class="img-slots img-slots-3">
         <figure class="img-slot">
-          <img id="img-guardiao-1" src="IMG-20261117-WA0001.jpg" alt="Guardião do Silêncio — imagem 1" />
+          <img id="img-guardiao-1" src="guardiao-1.jpg" alt="Guardião do Silêncio — imagem 1" />
           <figcaption class="img-cap">Foto 1 do projeto</figcaption>
         </figure>
         <figure class="img-slot">
-          <img id="img-guardiao-2" src="IMG-20261117-WA0002.jpg" alt="Guardião do Silêncio — imagem 2" />
+          <img id="img-guardiao-2" src="guardiao-2.jpg" alt="Guardião do Silêncio — imagem 2" />
           <figcaption class="img-cap">Foto 2 do projeto</figcaption>
         </figure>
         <figure class="img-slot">
-          <img id="img-guardiao-3" src="IMG-20261117-WA0000.jpg" alt="Guardião do Silêncio — imagem 3" />
+          <img id="img-guardiao-3" src="guardiao-3.jpg" alt="Guardião do Silêncio — imagem 3" />
           <figcaption class="img-cap">Foto 3 do projeto</figcaption>
         </figure>
       </div>
@@ -605,6 +611,7 @@ void loop() {
           <span class="code-tag">cole o código aqui</span>
         </div>
         <pre class="code-block"><code>// Guardião do Silêncio
+// Cole aqui o código final do projeto
 
 // Exemplo de estrutura com faixas de som:
 // 0% a 25%   → conversas
@@ -648,6 +655,81 @@ void loop() {
     </main>
   </div>
 
+  <!-- MAPEAMENTO -->
+  <div id="page-mapeamento" class="page">
+    <main class="container content-page">
+      <p class="sec-code">módulo 09</p>
+      <h1>Mapeamento Acústico</h1>
+      <p class="content-lead">Levantamento de ruído mínimo, médio e máximo em salas e espaços da escola, com classificação de risco detectado.</p>
+
+      <div class="img-slots img-slots-1">
+        <figure class="img-slot img-slot-tall">
+          <img src="mapeamento.png" alt="Tabela de mapeamento acústico escolar — ruído médio e risco detectado" />
+          <figcaption class="img-cap">Tabela completa: ruído mínimo, médio, máximo e risco por local</figcaption>
+        </figure>
+      </div>
+      <p style="text-align:center; margin-bottom:1.5rem;">
+        <a href="mapeamento-acustico.pdf" target="_blank" class="btn btn-line" style="display:inline-block;">📄 Abrir PDF original do mapeamento</a>
+      </p>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="card-head">
+            <h3>A pesquisa dos alunos</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>Os alunos do <strong>2ºB</strong> da <strong>Escola San Rafael</strong> pesquisaram todas as salas e espaços comuns da escola com medidores de som e ruído. Eles registraram valores mínimos, médios e máximos em decibéis (dB) e classificaram o risco acústico de cada local.</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Curiosidade</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <p>A Biblioteca foi o ambiente mais silencioso (média ~41 dB — SEGURO). Em contraste, várias salas em trabalho em grupo ou individual chegaram a picos acima de 80–87 dB, entrando em zonas de <strong>Estresse / Mascaramento</strong> ou <strong>Alerta de Fadiga Inicial</strong>. O pátio/refeitório e a sala dos professores também apresentaram níveis elevados no intervalo.</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>O que significam os riscos</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <ul>
+              <li><strong>SEGURO</strong> — níveis confortáveis para concentração e conversa.</li>
+              <li><strong>ALERTA Fadiga Inicial</strong> — ruído que já começa a cansar a atenção.</li>
+              <li><strong>ESTRESE Mascaramento</strong> — o barulho “mascara” a fala e aumenta o estresse auditivo.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="card-head">
+            <h3>Ideias-chave</h3>
+            <button type="button" class="btn-speak-sm" data-speak-card title="Ouvir este texto">🔊</button>
+          </div>
+          <div class="speak-text">
+            <ul>
+              <li>Mapeamento feito pelos alunos do 2ºB — Escola San Rafael</li>
+              <li>Medição de ruído mínimo / médio / máximo (dB)</li>
+              <li>Classificação de risco por ambiente</li>
+              <li>Biblioteca: ambiente mais silencioso da pesquisa</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="page-nav">
+        <a href="#" class="btn btn-line" data-page="guardiao">← Guardião</a>
+        <a href="#" class="btn btn-main" data-page="home">início →</a>
+      </div>
+    </main>
+  </div>
+
   <!-- SOBRE -->
   <div id="page-sobre" class="page">
     <main class="container content-page">
@@ -661,7 +743,7 @@ void loop() {
           </div>
           <div class="speak-text">
             <p>
-              O Projeto IFA reúne conceitos de Óptica, protótipos com Arduino, mapeamento de pontos acessíveis na escola e o Guardião do Silêncio.
+              O Projeto IFA reúne conceitos de Óptica, protótipos com Arduino, mapeamento de pontos acessíveis na escola, o Guardião do Silêncio e o mapeamento acústico das salas (ruído e risco).
             </p>
             <p style="margin-top:1rem;color:var(--primary);font-family:var(--hand);font-size:1.25rem;">
               — Projeto IFA · 2ºB
